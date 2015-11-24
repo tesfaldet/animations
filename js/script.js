@@ -45,8 +45,8 @@ window.onload = function() {
 
 	var thingAnimation = function thing() {
 		var keyframes = [
-				{fill: 'none', stroke: 'rgb(21,19,43)', 'stroke-width': 4, 'stroke-dasharray': 10, 'stroke-dashoffset': 0, offset: 0},
-				{fill: 'none', stroke: 'rgb(21,19,43)', 'stroke-width': 4, 'stroke-dasharray': 10, 'stroke-dashoffset': 500, offset: 1}
+				{fill: 'rgba(23,16,44,0.2)', stroke: 'rgb(23,16,44)', 'stroke-width': 8, 'stroke-dasharray': 10, 'stroke-dashoffset': 0, offset: 0},
+				{fill: 'rgba(23,16,44,0.2)', stroke: 'rgb(23,16,44)', 'stroke-width': 8, 'stroke-dasharray': 10, 'stroke-dashoffset': 500, offset: 1}
     ];
     var timing = {
         duration: 10000,
