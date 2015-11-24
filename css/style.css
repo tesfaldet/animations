@@ -3,6 +3,38 @@
   src: url("../fonts/Campton-BoldDEMO.otf");
 }
 
-#bestlogo {
+div {
+  display: inline-block;
+}
+
+.bestlogo1,.bestlogo2,.bestlogo3 {
   width: 100px;
+}
+
+.bestlogo3 {
+  transform: translateY(4px);
+}
+
+/* Anaglyph BEST logo */
+@keyframes phaseShift {
+  from {text-shadow: cyan 0 0 0, red 0 0 0;}
+  to {text-shadow: cyan -2px 0 0, red 2px 0 0;}
+}
+
+.bestlogo2 #text {
+  animation: phaseShift 2s ease-in-out infinite alternate;
+}
+
+.bestlogo3 {
+  stroke-linecap: round;
+}
+
+@keyframes drawOutline {
+  to {stroke-dashoffset: 0;}
+}
+
+.bestlogo3:hover {
+  stroke-dasharray: 200;
+  stroke-dashoffset: -1000;
+  animation: drawOutline 10s linear infinite alternate;
 }

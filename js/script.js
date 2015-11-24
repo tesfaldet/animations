@@ -14,7 +14,7 @@ window.onload = function() {
         iterations: 1,
         easing: 'cubic-bezier(0.215, 0.610, 0.355, 1.000)'
     };
-		var elem = document.querySelector('#ellipse circle');
+		var elem = document.querySelector('.bestlogo1 #ellipse circle');
 
     return new Animation(new KeyframeEffect(elem, keyframes, timing), elem.ownerDocument.timeline);
   }();
@@ -38,7 +38,7 @@ window.onload = function() {
         iterations: 1,
 				easing: 'cubic-bezier(.65,.44,.95,.44)'
     };
-		var elem = document.querySelector('#shape1');
+		var elem = document.querySelector('.bestlogo1 #shape1');
 
     return new Animation(new KeyframeEffect(elem, keyframes, timing), elem.ownerDocument.timeline);
   }();
@@ -52,24 +52,24 @@ window.onload = function() {
         duration: 10000,
         iterations: Infinity
     };
-		var elem = document.querySelector('#shape2');
+		var elem = document.querySelector('.bestlogo1 #shape2');
 
     return new Animation(new KeyframeEffect(elem, keyframes, timing), elem.ownerDocument.timeline);
 	}();
 
-  document.querySelector('#ellipse').onmouseover = function() {
+  document.querySelector('.bestlogo1 #ellipse').onmouseover = function() {
     circleBounceAnimation.play();
   };
 
-  document.querySelector('#shape1').onmouseover = function() {
+  document.querySelector('.bestlogo1 #shape1').onmouseover = function() {
     gumStretchAnimation.play();
   };
 
-	document.querySelector('#shape2').onmouseover = function() {
+	document.querySelector('.bestlogo1 #shape2').onmouseover = function() {
 		thingAnimation.play();
 	};
 
-	document.querySelector('#shape2').onmouseout = function() {
+	document.querySelector('.bestlogo1 #shape2').onmouseout = function() {
 		thingAnimation.cancel();
 	};
 };
