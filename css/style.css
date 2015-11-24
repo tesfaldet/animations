@@ -7,12 +7,16 @@ div {
   display: inline-block;
 }
 
-.bestlogo1,.bestlogo2,.bestlogo3,.bestlogo4 {
+.bestlogo1,.bestlogo2,.bestlogo3 {
   width: 100px;
 }
 
 .bestlogo3 {
   transform: translateY(4px);
+}
+
+.bestlogo4 {
+	width: 150px;
 }
 
 /* Anaglyph BEST logo */
@@ -37,4 +41,12 @@ div {
   stroke-dasharray: 200;
   stroke-dashoffset: -1000;
   animation: drawOutline 10s linear infinite alternate;
+}
+
+.bestlogo4:hover {
+	fill: none;
+	stroke: black;
+	stroke-dasharray: 200;
+	stroke-dashoffset: 1000;
+	animation: drawOutline 10s linear infinite alternate;
 }
